@@ -101,6 +101,8 @@ Please ensure your Elasticsearch index is named: `restaurants`
 **Output**
 { "field1": "Need to optimize the tyre temperature. front wing needs to be changed." }
 
+### ▶️ How to Run the Notebook
+
 # Assignment 3
 
 
