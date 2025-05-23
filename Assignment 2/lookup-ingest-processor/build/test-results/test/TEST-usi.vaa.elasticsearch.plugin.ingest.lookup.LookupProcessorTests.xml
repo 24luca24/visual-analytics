@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="usi.vaa.elasticsearch.plugin.ingest.lookup.LookupProcessorTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-04-27T09:57:09.868Z" hostname="Mac.homenet.telecomitalia.it" time="0.01">
+  <properties/>
+  <testcase name="testEmptyField" classname="usi.vaa.elasticsearch.plugin.ingest.lookup.LookupProcessorTests" time="0.008"/>
+  <testcase name="testSimple" classname="usi.vaa.elasticsearch.plugin.ingest.lookup.LookupProcessorTests" time="0.002"/>
+  <system-out><![CDATA[[2025-04-27T05:57:09,870][INFO ][u.v.e.p.i.l.LookupProcessorTests] [testEmptyField] before test
+[2025-04-27T05:57:09,876][INFO ][u.v.e.p.i.l.LookupProcessorTests] [testEmptyField] after test
+[2025-04-27T05:57:09,878][INFO ][u.v.e.p.i.l.LookupProcessorTests] [testSimple] before test
+[2025-04-27T05:57:09,878][INFO ][u.v.e.p.i.l.LookupProcessorTests] [testSimple] after test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

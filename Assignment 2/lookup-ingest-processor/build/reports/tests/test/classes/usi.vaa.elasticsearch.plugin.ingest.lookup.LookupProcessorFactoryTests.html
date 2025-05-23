@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - LookupProcessorFactoryTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>LookupProcessorFactoryTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/usi.vaa.elasticsearch.plugin.ingest.lookup.html">usi.vaa.elasticsearch.plugin.ingest.lookup</a> &gt; LookupProcessorFactoryTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.046s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testDefaultConfiguration</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInvalidConfiguration</td>
+<td class="success">0.043s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2025-04-27T11:57:09,515][WARN ][o.e.n.NativeAccess       ] [[SUITE-LookupProcessorFactoryTests-seed#[94D1150D7C7E34D3]]] Unable to load native provider. Native methods will be disabled.
+java.lang.UnsatisfiedLinkError: Native library [lib/platform/darwin-aarch64/libzstd.dylib] does not exist
+	at org.elasticsearch.nativeaccess.lib.LoaderHelper.loadLibrary(LoaderHelper.java:57) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.jdk.JdkZstdLibrary.&lt;clinit&gt;(JdkZstdLibrary.java:29) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.lib.NativeLibraryProvider.getLibrary(NativeLibraryProvider.java:59) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.AbstractNativeAccess.&lt;init&gt;(AbstractNativeAccess.java:31) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.PosixNativeAccess.&lt;init&gt;(PosixNativeAccess.java:35) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.MacNativeAccess.&lt;init&gt;(MacNativeAccess.java:39) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.NativeAccessHolder.&lt;clinit&gt;(NativeAccessHolder.java:31) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.NativeAccess.instance(NativeAccess.java:25) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.initializeNatives(Elasticsearch.java:290) ~[elasticsearch-8.17.4.jar:8.17.4]
+	at org.elasticsearch.bootstrap.BootstrapForTesting.&lt;clinit&gt;(BootstrapForTesting.java:92) ~[framework-8.17.4.jar:8.17.4]
+	at org.elasticsearch.test.ESTestCase.&lt;clinit&gt;(ESTestCase.java:332) ~[framework-8.17.4.jar:8.17.4]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.lang.Class.forName(Class.java:513) ~[?:?]
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$2.run(RandomizedRunner.java:631) ~[randomizedtesting-runner-2.8.0.jar:?]
+[2025-04-27T11:57:09,519][WARN ][o.e.n.NativeAccess       ] [[SUITE-LookupProcessorFactoryTests-seed#[94D1150D7C7E34D3]]] Cannot check if running as root because native access is not available
+[2025-04-27T11:57:09,519][WARN ][o.e.n.NativeAccess       ] [[SUITE-LookupProcessorFactoryTests-seed#[94D1150D7C7E34D3]]] Cannot install system call filter because native access is not available
+[2025-04-27T11:57:09,539][INFO ][o.e.c.t.DateFormatters   ] [[SUITE-LookupProcessorFactoryTests-seed#[94D1150D7C7E34D3]]] Using java.time datetime parsers only
+[2025-04-27T11:57:09,808][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testInvalidConfiguration] before test
+[2025-04-27T11:57:09,847][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testInvalidConfiguration] after test
+[2025-04-27T11:57:09,849][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testDefaultConfiguration] before test
+[2025-04-27T11:57:09,850][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testDefaultConfiguration] after test
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>apr 27, 2025 11:57:09 AM org.apache.lucene.internal.vectorization.VectorizationProvider lookup
+AVVERTENZA: Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at 27 apr 2025, 11:57:09</p>
+</div>
+</div>
+</body>
+</html>

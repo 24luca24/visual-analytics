@@ -1,0 +1,35 @@
+---
+"Test lookup processor with defaults":
+  - do:
+      ingest.put_pipeline:
+        id: "my_pipeline"
+        body:  >
+          {
+            "description": "A pipeline to ingest data and apply a lookup",
+            "processors": [
+            {
+              "lookup" : {
+                "field" : "field1",
+                "lookup-map" : {
+                  "C001":"tyre" ,
+                  "C010":"front wing",
+                  "C100":"damper"
+                }
+              }
+            }
+            ]
+          }
+  - match: { acknowledged: true }
+
+  - do:
+      index:
+        index: test
+        id: 1
+        pipeline: "my_pipeline"
+        body: {field1: "Need to optimize the C001 temperature. C010 needs to be changed as it is damaged. C100 seems ok."}
+
+  - do:
+      get:
+        index: test
+        id: 1
+  - match: { _source.field1: "Need to optimize the tyre temperature. front wing needs to be changed as it is damaged. damper seems ok." }

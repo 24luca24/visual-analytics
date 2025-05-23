@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="usi.vaa.elasticsearch.plugin.ingest.lookup.LookupProcessorFactoryTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-04-27T09:57:09.804Z" hostname="Mac.homenet.telecomitalia.it" time="0.046">
+  <properties/>
+  <testcase name="testInvalidConfiguration" classname="usi.vaa.elasticsearch.plugin.ingest.lookup.LookupProcessorFactoryTests" time="0.043"/>
+  <testcase name="testDefaultConfiguration" classname="usi.vaa.elasticsearch.plugin.ingest.lookup.LookupProcessorFactoryTests" time="0.003"/>
+  <system-out><![CDATA[[2025-04-27T11:57:09,515][WARN ][o.e.n.NativeAccess       ] [[SUITE-LookupProcessorFactoryTests-seed#[94D1150D7C7E34D3]]] Unable to load native provider. Native methods will be disabled.
+java.lang.UnsatisfiedLinkError: Native library [lib/platform/darwin-aarch64/libzstd.dylib] does not exist
+	at org.elasticsearch.nativeaccess.lib.LoaderHelper.loadLibrary(LoaderHelper.java:57) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.jdk.JdkZstdLibrary.<clinit>(JdkZstdLibrary.java:29) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.lib.NativeLibraryProvider.getLibrary(NativeLibraryProvider.java:59) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.AbstractNativeAccess.<init>(AbstractNativeAccess.java:31) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.PosixNativeAccess.<init>(PosixNativeAccess.java:35) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.MacNativeAccess.<init>(MacNativeAccess.java:39) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.NativeAccessHolder.<clinit>(NativeAccessHolder.java:31) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.nativeaccess.NativeAccess.instance(NativeAccess.java:25) ~[elasticsearch-native-8.17.4.jar:8.17.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.initializeNatives(Elasticsearch.java:290) ~[elasticsearch-8.17.4.jar:8.17.4]
+	at org.elasticsearch.bootstrap.BootstrapForTesting.<clinit>(BootstrapForTesting.java:92) ~[framework-8.17.4.jar:8.17.4]
+	at org.elasticsearch.test.ESTestCase.<clinit>(ESTestCase.java:332) ~[framework-8.17.4.jar:8.17.4]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.lang.Class.forName(Class.java:513) ~[?:?]
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$2.run(RandomizedRunner.java:631) ~[randomizedtesting-runner-2.8.0.jar:?]
+[2025-04-27T11:57:09,519][WARN ][o.e.n.NativeAccess       ] [[SUITE-LookupProcessorFactoryTests-seed#[94D1150D7C7E34D3]]] Cannot check if running as root because native access is not available
+[2025-04-27T11:57:09,519][WARN ][o.e.n.NativeAccess       ] [[SUITE-LookupProcessorFactoryTests-seed#[94D1150D7C7E34D3]]] Cannot install system call filter because native access is not available
+[2025-04-27T11:57:09,539][INFO ][o.e.c.t.DateFormatters   ] [[SUITE-LookupProcessorFactoryTests-seed#[94D1150D7C7E34D3]]] Using java.time datetime parsers only
+[2025-04-27T11:57:09,808][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testInvalidConfiguration] before test
+[2025-04-27T11:57:09,847][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testInvalidConfiguration] after test
+[2025-04-27T11:57:09,849][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testDefaultConfiguration] before test
+[2025-04-27T11:57:09,850][INFO ][u.v.e.p.i.l.LookupProcessorFactoryTests] [testDefaultConfiguration] after test
+]]></system-out>
+  <system-err><![CDATA[apr 27, 2025 11:57:09 AM org.apache.lucene.internal.vectorization.VectorizationProvider lookup
+AVVERTENZA: Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+]]></system-err>
+</testsuite>
